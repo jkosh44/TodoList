@@ -91,7 +91,7 @@ public class TodoRecyclerAdapter extends RecyclerView.Adapter<TodoRecyclerAdapte
                 todo.save();
 
                 Toast.makeText(context,
-                        "Todo " + position,
+                        todo.getTodo() + " finished",
                         Toast.LENGTH_SHORT).show();
             }
         });
